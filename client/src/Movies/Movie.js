@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MovieCard from './MovieCard';
+import SavedList from './SavedList' ;
+
 
 const Movie = (props) => {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState();
  
   useEffect(() => {
   
